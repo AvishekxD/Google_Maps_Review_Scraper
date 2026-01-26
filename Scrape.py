@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 
-def scrape_lakshya_library_reviews(url):
+def scrape_reviews(url):
     options = webdriver.ChromeOptions()
     options.add_argument("--lang=en")
     # Using a mobile user-agent because your HTML snippet is from the mobile view
@@ -86,5 +86,5 @@ def scrape_lakshya_library_reviews(url):
         driver.quit()
 
 # Use the URL of the review page specifically
-target_url = "https://www.google.com/maps/place/Zudio+-+Mansarovar,+Jaipur/@26.8400185,75.4559624,11z/data=!4m12!1m2!2m1!1szudio!3m8!1s0x396db5ab4004fb9d:0xa0380e7e79288cc8!8m2!3d26.8400185!4d75.760833!9m1!1b1!15sCgV6dWRpb1oHIgV6dWRpb5IBDmNsb3RoaW5nX3N0b3Jl4AEA!16s%2Fg%2F11vcbqt830?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D" 
-scrape_lakshya_library_reviews(target_url)
+target_url = "Your_url" 
+scrape_reviews(target_url)
